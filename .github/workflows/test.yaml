@@ -13,4 +13,4 @@ jobs:
         fetch-depth: 0
 
     - name: Var expansion
-      run: bash echo ${GITHUB_REF#refs/tags/}
+      run: echo ${GITHUB_REF#refs/tags/}
