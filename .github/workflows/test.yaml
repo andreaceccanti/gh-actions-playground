@@ -12,5 +12,5 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Var expansion
-      run: ./print-first-arg.sh ${GITHUB_REF#refs/tags/}
+    - name: Test var expansion
+      run: ./test.sh ${GITHUB_REF#refs/tags/}
